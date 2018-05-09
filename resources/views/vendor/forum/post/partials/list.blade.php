@@ -1,6 +1,11 @@
 <tr id="post-{{ $post->sequence }}" class="{{ $post->trashed() ? 'deleted' : '' }}" class="post-body">
     <td class="author-info">
         <strong>{!! $post->authorName !!}</strong>
+        {{--TODO--}}
+        <br>
+        <span>Тут надо вставить аватарочку</span>
+        <br>
+        <span>И всякую хрень, типа группы пользователей, даты реги и т.д.</span>
     </td>
     <td class="content">
         @if (!is_null($post->parent))
