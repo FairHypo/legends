@@ -13,10 +13,10 @@ return [
     */
 
     'policies' => [
-        'forum' => Riari\Forum\Policies\ForumPolicy::class,
+        'forum' => \App\Policies\ForumPolicy::class,
         'model' => [
-            Riari\Forum\Models\Category::class  => Riari\Forum\Policies\CategoryPolicy::class,
-            Riari\Forum\Models\Thread::class    => Riari\Forum\Policies\ThreadPolicy::class,
+            Riari\Forum\Models\Category::class  => \App\Policies\CategoryPolicy::class,
+            Riari\Forum\Models\Thread::class    => \App\Policies\ThreadPolicy::class,
             Riari\Forum\Models\Post::class      => Riari\Forum\Policies\PostPolicy::class
         ]
     ],

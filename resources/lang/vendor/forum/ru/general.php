@@ -13,7 +13,7 @@ return [
     'editing'           => "Вы редактируете :item",
     'generic_confirm'   => "Вы уверены?",
     'home_title'        => "Форум",
-    'index'             => "Главная",
+    'index'             => "Форум",
     'invalid_selection' => "Неверный выбор",
     'last_updated'      => "Последнее обновление",
     'mark_read'         => "Отметить как прочитаное",

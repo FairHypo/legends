@@ -55,6 +55,9 @@
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('auth.Logout') }}
                                     </a>
+                                    <a class="dropdown-item" href="{{ route('cabinet') }}">
+                                        Кабинет
+                                    </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf

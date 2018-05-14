@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layout.mainlayout')
 
 @section('content')
 <div class="container">
@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    Вы авторизованы!
+                    Вы авторизованы! Тут появится всякая фигня по управлению профилем, загрузка аватарочки и т.д.
                 </div>
             </div>
         </div>

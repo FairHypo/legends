@@ -3,9 +3,9 @@
         <strong>{!! $post->authorName !!}</strong>
         {{--TODO--}}
         <br>
-        <span>Тут надо вставить аватарочку</span>
+        <img src="http://24warez.ru/uploads/posts/1341561963_1.jpg" width="200px">
         <br>
-        <span>И всякую хрень, типа группы пользователей, даты реги и т.д.</span>
+        <span>Бог, царь, но это не точно.</span>
     </td>
     <td class="content">
         @if (!is_null($post->parent))

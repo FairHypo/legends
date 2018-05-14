@@ -12,9 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('index');
+})->name('index');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/cabinet', 'CabinetController@index')->name('cabinet');
+
+Route::get('/admin', function () {
+    return view('admin.dashboard');
+});
+
+Auth::routes();
