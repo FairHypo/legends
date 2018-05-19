@@ -33,12 +33,11 @@
         </div>
         <nav id="mainmenu" class="mainmenu">
             <ul>
-                <li class="logo-wrapper"><a href="{{ route('index') }}">Legends</a></li>
-                <li class="active">
-                    <a href="{{ route('index') }}">Главная</a>
+                <li class="logo-wrapper @if(request()->route()->getName() === 'index')active @endif">
+                    <a href="{{ route('index') }}">~Legends~</a>
                 </li>
-                <li>
-                    <a href="{{ route('forum.index') }}">Форум</a>
+                <li class="@if(explode('/', request()->route()->getPrefix())[0] === 'forums')active @endif">
+                    <a href="{{ route('chatter.home') }}">Форум</a>
                 </li>
                 {{--<li class="has-submenu">
                     <a href="#">Pages +</a>

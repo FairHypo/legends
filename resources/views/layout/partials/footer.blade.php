@@ -14,7 +14,7 @@
                 <h3>Навигация</h3>
                 <ul class="no-list-style footer-navigate-section">
                     <li><a href="{{ route('index') }}">Главная</a></li>
-                    <li><a href="{{ route('forum.index') }}">Форум</a></li>
+                    <li><a href="{{ route('chatter.home') }}">Форум</a></li>
                 </ul>
             </div>
 

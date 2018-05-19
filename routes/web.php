@@ -22,5 +22,3 @@ Route::get('/cabinet', 'CabinetController@index')->name('cabinet');
 Route::get('/admin', function () {
     return view('admin.dashboard');
 });
-
-Auth::routes();

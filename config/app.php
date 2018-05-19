@@ -150,8 +150,6 @@ return [
         /*
          * Package Service Providers...
          */
-        Riari\Forum\ForumServiceProvider::class,
-        Riari\Forum\Frontend\ForumFrontendServiceProvider::class,
         JeroenNoten\LaravelAdminLte\ServiceProvider::class,
 
         /*

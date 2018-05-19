@@ -2,23 +2,23 @@
 
 @section('content')
 
-    {{--<!-- Press Coverage -->
+    <!-- Press Coverage -->
     <div class="section">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-6">
                     <div class="in-press press-wired">
-                        <a href="#">Morbi eleifend congue elit nec sagittis. Praesent aliquam lobortis tellus, nec consequat vitae</a>
+                        <a href="{{ route('chatter.home') }}">Intelligence is the ability to adapt to change. P.S. ~Legends~ are cool!</a>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="in-press press-mashable">
-                        <a href="#">Morbi eleifend congue elit nec sagittis. Praesent aliquam lobortis tellus, nec consequat vitae</a>
+                        <a href="{{ route('chatter.home') }}">Это самая крутая команда со времен Бонни и Клайда</a>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="in-press press-techcrunch">
-                        <a href="#">Morbi eleifend congue elit nec sagittis. Praesent aliquam lobortis tellus, nec consequat vitae</a>
+                        <a href="{{ route('chatter.home') }}">Мы плёхо говорить по-русски, но знаем точно ~Legends~ - самые четкие в нашей игре.</a>
                     </div>
                 </div>
             </div>
@@ -26,7 +26,7 @@
     </div>
     <!-- Press Coverage -->
 
-    <!-- Services -->
+    {{--<!-- Services -->
     <div class="section">
         <div class="container">
             <div class="row">

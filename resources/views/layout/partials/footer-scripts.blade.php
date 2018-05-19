@@ -8,3 +8,4 @@
 <script src="{{ asset('js/jquery.bxslider.js') }}"></script>
 <script src="{{ asset('js/main-menu.js') }}"></script>
 <script src="{{ asset('js/template.js') }}"></script>
+@yield('js')

@@ -20,3 +20,4 @@
 <link rel="stylesheet" href="{{ asset('css/main.css') }}">
 
 <script src="{{ asset('js/modernizr-2.6.2-respond-1.1.0.min.js') }}"></script>
+@yield('css')
