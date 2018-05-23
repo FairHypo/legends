@@ -84,13 +84,12 @@
 							<li>
 				        		<a class="discussion_list" href="/{{ Config::get('chatter.routes.home') }}/{{ Config::get('chatter.routes.discussion') }}/{{ $discussion->category->slug }}/{{ $discussion->slug }}">
 					        		<div class="chatter_avatar">
-                                    	<?php $db_field = Config::get('chatter.user.avatar_image_database_field'); ?>
-					        			@if(null !== $db_field && !empty($discussion->user->{$db_field}))
+					        			@if(!empty($discussion->user->avatar))
 					        				<!-- If the user db field contains http:// or https:// we don't need to use the relative path to the image assets -->
-					        				@if( (substr($discussion->user->{$db_field}, 0, 7) == 'http://') || (substr($discussion->user->{$db_field}, 0, 8) == 'https://') )
-					        					<img src="{{ $discussion->user->{$db_field}  }}">
+					        				@if( (substr($discussion->user->avatar, 0, 7) == 'http://') || (substr($discussion->user->avatar, 0, 8) == 'https://') )
+					        					<img src="{{ $discussion->user->avatar  }}">
 					        				@else
-					        					<img src="{{ Config::get('chatter.user.relative_url_to_image_assets') . $discussion->user->{$db_field}  }}">
+					        					<img src="{{ Config::get('chatter.user.relative_url_to_image_assets') . $discussion->user->avatar }}">
 					        				@endif
 
 					        			@else
