@@ -100,16 +100,13 @@
 			                			</div>
 			                		@endcan
 			                		<div class="chatter_avatar">
-
 					        			@if(!empty($post->user->avatar))
-
 					        				<!-- If the user db field contains http:// or https:// we don't need to use the relative path to the image assets -->
 					        				@if( (substr($post->user->avatar, 0, 7) == 'http://') || (substr($post->user->avatar, 0, 8) == 'https://') )
 					        					<img src="{{ $post->user->avatar }}">
 					        				@else
 					        					<img src="{{ Config::get('chatter.user.relative_url_to_image_assets') . $post->user->avatar  }}">
 					        				@endif
-
 					        			@else
 					        				<span class="chatter_avatar_circle" style="background-color:#<?= \DevDojo\Chatter\Helpers\ChatterHelper::stringToColorCode($post->user->{Config::get('chatter.user.database_field_with_user_name')}) ?>">
 					        					{{ ucfirst(substr($post->user->{Config::get('chatter.user.database_field_with_user_name')}, 0, 1)) }}
