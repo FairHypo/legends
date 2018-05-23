@@ -100,9 +100,8 @@
 			                			</div>
 			                		@endcan
 			                		<div class="chatter_avatar">
-					        			@if(Config::get('chatter.user.avatar_image_database_field'))
-
-					        				<?php $db_field = Config::get('chatter.user.avatar_image_database_field'); ?>
+										<?php $db_field = Config::get('chatter.user.avatar_image_database_field'); ?>
+					        			@if(null !== $db_field && !empty($post->user->{$db_field}))
 
 					        				<!-- If the user db field contains http:// or https:// we don't need to use the relative path to the image assets -->
 					        				@if( (substr($post->user->{$db_field}, 0, 7) == 'http://') || (substr($post->user->{$db_field}, 0, 8) == 'https://') )
@@ -119,7 +118,7 @@
 					        		</div>
 
 					        		<div class="chatter_middle">
-					        			<span class="chatter_middle_details"><a href="{{ \DevDojo\Chatter\Helpers\ChatterHelper::userLink($post->user) }}">{{ ucfirst($post->user->{Config::get('chatter.user.database_field_with_user_name')}) }}</a> <span class="ago chatter_middle_details">{{ $post->created_at }}</span></span>
+					        			<span class="chatter_middle_details"><a href="{{ \DevDojo\Chatter\Helpers\ChatterHelper::userLink($post->user) }}">{{ $post->user->{Config::get('chatter.user.database_field_with_user_name')} }} (@lang('roles.' . $post->user->role->name))</a> <span class="ago chatter_middle_details">{{ $post->created_at }}</span></span>
 					        			<div class="chatter_body">
 
 					        				@if($post->markdown)
@@ -127,7 +126,9 @@
 					        					<?= \DevDojo\Chatter\Helpers\ChatterHelper::demoteHtmlHeaderTags( GrahamCampbell\Markdown\Facades\Markdown::convertToHtml( $post->body ) ); ?>
 					        					<!--?= GrahamCampbell\Markdown\Facades\Markdown::convertToHtml( $post->body ); ?-->
 					        				@else
-					        					<?= $post->body; ?>
+												{!! $post->body !!}
+											<hr>
+												{{ $post->user->description or '' }}
 					        				@endif
 
 					        			</div>

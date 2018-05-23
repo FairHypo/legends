@@ -124,9 +124,9 @@ return [
     'user' => [
         'namespace'                     => 'App\User',
         'database_field_with_user_name' => 'name',
-        'relative_url_to_profile'       => '',
-        'relative_url_to_image_assets'  => '',
-        'avatar_image_database_field'   => '',
+        'relative_url_to_profile'       => '/profile/{id}',
+        'relative_url_to_image_assets'  => '/img/uploads/images/',
+        'avatar_image_database_field'   => 'avatar',
     ],
 
     /*
