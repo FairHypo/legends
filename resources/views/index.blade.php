@@ -18,7 +18,7 @@
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="in-press press-techcrunch">
-                        <a href="{{ route('chatter.home') }}">Мы плёхо говорить по-русски, но знаем точно ~Legends~ - самые четкие в нашей игре.</a>
+                        <a href="{{ route('chatter.home') }}">Мы плёхо говорить по-русски, но знаем точно ~Legends~ - четкие.</a>
                     </div>
                 </div>
             </div>
@@ -26,32 +26,32 @@
     </div>
     <!-- Press Coverage -->
 
-    {{--<!-- Services -->
+    <!-- Services -->
     <div class="section">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-6">
                     <div class="service-wrapper">
-                        <img src="img/service-icon/diamond.png" alt="Service 1">
-                        <h3>Aliquam in adipiscing</h3>
-                        <p>Praesent rhoncus mauris ac sollicitudin vehicula. Nam fringilla turpis turpis, at posuere turpis aliquet sit amet condimentum</p>
-                        <a href="#" class="btn">Read more</a>
+                        <img src="{{ asset('/img/service-icon/hr.png') }}" alt="Прием в клан">
+                        <h3>Прием в клан</h3>
+                        <p>Узнайте о правилах приема, пройдите собеседование в ТС, вступите в гильдию и получите доступ к клановому разделу.</p>
+                        <a href="{{ url('/forums/category/hr') }}" class="btn">Подробнее</a>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="service-wrapper">
-                        <img src="img/service-icon/ruler.png" alt="Service 2">
-                        <h3>Curabitur mollis</h3>
-                        <p>Suspendisse eget libero mi. Fusce ligula orci, vulputate nec elit ultrices, ornare faucibus orci. Aenean lectus sapien, vehicula</p>
-                        <a href="#" class="btn">Read more</a>
+                        <img src="{{ asset('/img/service-icon/master.png') }}" alt="Интервью с мастером">
+                        <h3>Интервью с мастером</h3>
+                        <p>Dream_Ко, мастер клана ~Legends~, делится планами по развитию гильдии и рассказывает о своем игровом опыте.</p>
+                        <a href="{{ route('interview') }}" class="btn">Подробнее</a>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="service-wrapper">
-                        <img src="img/service-icon/box.png" alt="Service 3">
-                        <h3>Vivamus mattis</h3>
-                        <p>Phasellus posuere et nisl ac commodo. Nulla facilisi. Sed tincidunt bibendum cursus. Aenean vulputate aliquam risus rutrum scelerisque</p>
-                        <a href="#" class="btn">Read more</a>
+                        <img src="{{ asset('/img/service-icon/deep.png') }}" alt="Дипломатия">
+                        <h3>Дипломатия</h3>
+                        <p>Мы мирная ПВЕ-гильдия. Но если все же случился неприятный инцидент - добро пожаловать в соответствующий раздел.</p>
+                        <a href="{{ url('/forums/category/killemall') }}" class="btn">Подробнее</a>
                     </div>
                 </div>
             </div>
@@ -59,7 +59,7 @@
     </div>
     <!-- End Services -->
 
-    <!-- Call to Action Bar -->
+    {{--<!-- Call to Action Bar -->
     <div class="section section-white">
         <div class="container">
             <div class="row">
