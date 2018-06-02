@@ -21,7 +21,7 @@
             <div class="col-footer col-md-6 col-xs-6">
                 <h3>Контакты</h3>
                 <p class="contact-us-details">
-                    <b>Teamspeak:</b> <a href="http://invite.teamspeak.com/legends.pw.tsclan.ru/">legends.pw.tsclan.ru</a><br/>
+                    <b>Teamspeak:</b> <a href="http://invite.teamspeak.com/legends.pw.tsclan.ru/" target="_blank">legends.pw.tsclan.ru</a><br/>
                 </p>
             </div>
             {{--<div class="col-footer col-md-2 col-xs-6">
